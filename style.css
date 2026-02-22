@@ -1,5 +1,5 @@
 body{
-    background-color rgb(203, 137, 148);
+    background-color:rgb(203, 137, 148);
 }
 
 header{
@@ -39,7 +39,7 @@ header nav img{
     margin: 20px;
 }
 .content{
-    background-color:#f9ccd3
+    background-color:#f9ccd3;
     border-radius: 20px;
     padding: 50px;
     font-size: 20px;
@@ -56,7 +56,7 @@ header nav img{
 }
 
 #menu{
-    :rgb(228, 195, 200);
+    background-color:rgb(228, 195, 200);
     padding: 50px;
     font-size: 25px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
