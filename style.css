@@ -1,5 +1,5 @@
 body{
-    background-color rgb(203, 137, 148);
+    background-color:rgb(203, 137, 148);
 }
 
 header{
@@ -39,7 +39,7 @@ header nav img{
     margin: 20px;
 }
 .content{
-    background-color:#f9ccd3
+    background-color:#f9ccd3;
     border-radius: 20px;
     padding: 50px;
     font-size: 20px;
@@ -56,7 +56,7 @@ header nav img{
 }
 
 #menu{
-    :rgb(228, 195, 200);
+    background-color:rgb(228, 195, 200);
     padding: 50px;
     font-size: 25px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -113,7 +113,7 @@ gap: 10px;
     
 }
 .section-fouur div{
-    background-colour: rgba(0, 0, 0, 0.482);
+    background-color: rgba(0, 0, 0, 0.482);
     border-radius: 20px;
 }
 .order{
@@ -130,7 +130,7 @@ gap: 10px;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
-    background-colour:rgb(161, 82, 95);
+    background-color:rgb(161, 82, 95);
     color: rgb(255, 255, 255);
     font-family: cursive;
     font-weight:700;
