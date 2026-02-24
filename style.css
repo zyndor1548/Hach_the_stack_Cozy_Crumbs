@@ -1,171 +1,344 @@
 body {
-	background-color: rgb(203, 137, 148);
+    background-color: rgb(203, 137, 148);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 header {
-	background-color: rgb(102, 48, 56);
-}
-
-nav {
-	display: flex;
-	align-items: center;
-}
-
-nav ul {
-	display: flex;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	margin-left: auto;
+    background-color: rgb(102, 48, 56);
 }
 
 .logo {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 
 .logo h1 {
-	color: #FAF7F2;
+    color: #FAF7F2;
 }
 
 header img {
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
-	padding: 30px;
-	font-size: 30px;
+    padding: 30px;
+    font-size: 30px;
 }
 
 header nav ul li a {
-	text-decoration: none;
-	color: #0c0b09;
+    text-decoration: none;
+    color: #0c0b09;
 }
 
 header nav img {
-	padding: 30px;
+    padding: 30px;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.container img {
-	width: 500px;
-	height: 500px;
-	border-radius: 20px;
+#container img {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 20px;
+    max-width: 100%;
 }
 
 .content {
-	background-color: #f9ccd3;
-	border-radius: 20px;
-	padding: 50px;
-	font-size: 20px;
-	font-family: monospace;
-	margin: 40px;
+    background-color: #f9ccd3;
+    border-radius: 20px;
+    padding: 50px;
+    font-size: 20px;
+    font-family: monospace;
+    margin: 40px;
 }
 
 .content button {
-	background-color: rgb(238, 224, 228);
-	color: rgb(15, 15, 15);
-	font-size: larger;
-	font-family: cursive;
-	padding: 10px;
-	font-weight: 200;
+    background-color: rgb(238, 224, 228);
+    color: rgb(15, 15, 15);
+    font-size: larger;
+    font-family: cursive;
+    padding: 10px;
+    font-weight: 200;
 }
 
-#menu {
-	color: rgb(228, 195, 200);
-	padding: 50px;
-	font-size: 25px;
-	font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-	margin: 100px;
-	color: rgb(127, 51, 51);
-	text-align: center;
+#menu{
+    background-color:rgb(228, 195, 200);
+    padding: 50px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 100px;
+    color: rgb(127, 51, 51);
+    text-align: center;
 }
 
 .items button {
-	font-size: 30px;
-	padding: 20px;
-	margin: 20px;
-	background-color: rgb(17, 1, 3);
-	color: white;
-
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(17, 1, 3);
+    color: white;
 }
 
 footer {
-	background-color: black;
-	padding: 30px;
-	margin-bottom: 0%;
-	color: white;
-	font-size: 25px;
-	display: flex;
-	justify-content: space-between;
+    background-color: black;
+    padding: 30px;
+    margin-bottom: 0%;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer-info {
-	gap: 60px;
-	margin-top: 10px;
+    gap: 60px;
+    margin-top: 10px;
 }
 
 #imgs img {
-	height: 200px;
-	width: 200px;
-	padding: 10px;
-	border-radius: 90px;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 90px;
+    max-width: 100%;
 }
 
 #img {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
 
 .section-three {
-	padding-left: 150px;
-	padding-right: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .section-three h2 {
-	font-size: 60px;
-	font-family: cursive;
-	text-align: centers;
+    font-size: 60px;
+    font-family: cursive;
+    text-align: center;
 }
 
 .section-four {
-	background-image: url(order.jpg);
-	text-align: center;
-	padding: 150px;
-	margin-top: 100px;
-
+    background-image: url(order.jpg);
+    text-align: center;
+    padding: 150px;
+    margin-top: 100px;
 }
 
-.section-fouur div {
-	background-color: rgba(0, 0, 0, 0.482);
-	border-radius: 20px;
+.section-four div {
+    background-color: rgba(0, 0, 0, 0.482);
+    border-radius: 20px;
 }
 
 .order {
-	color: rgb(0, 0, 0);
-	padding: 50px;
-	font-size: 20px;
-	font-family: monospace;
-	margin: 40px;
-	box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.7);
-
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    font-size: 20px;
+    font-family: monospace;
+    margin: 40px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 .section-four button {
-	font-size: 20px;
-	padding: 20px;
-	margin: 20px;
-	border-radius: 20px;
-	background-color: rgb(161, 82, 95);
-	color: rgb(255, 255, 255);
-	font-family: cursive;
-	font-weight: 700;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(161, 82, 95);
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-weight: 700;
+}
+
+/* ---------- TABLET (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+    .logo {
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    #container img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 20px;
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    #menu {
+        padding: 20px;
+        margin: 40px 20px;
+        font-size: 18px;
+    }
+
+    .items button {
+        font-size: 20px;
+        padding: 14px;
+        margin: 10px;
+    }
+
+    .section-three {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .section-three h2 {
+        font-size: 36px;
+    }
+
+    #img {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #imgs img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .section-four {
+        padding: 60px 20px;
+        margin-top: 40px;
+    }
+
+    .order {
+        padding: 20px;
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* ---------- MOBILE (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+    .logo {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 15px;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    #menu {
+        padding: 15px;
+        margin: 20px 10px;
+        font-size: 16px;
+    }
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .items button {
+        font-size: 16px;
+        padding: 10px;
+        margin: 8px;
+    }
+
+    .section-three {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-three h2 {
+        font-size: 26px;
+    }
+
+    #img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #imgs img {
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+    }
+
+    .section-four {
+        padding: 40px 15px;
+        margin-top: 20px;
+    }
+
+    .section-four button {
+        font-size: 16px;
+        padding: 12px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .order {
+        padding: 15px;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 20px;
+    }
 }
