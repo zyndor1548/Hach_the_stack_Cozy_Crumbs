@@ -401,3 +401,48 @@ footer {
         flex-direction: column;
     }
 }
+/* Menu Category Button Styles */
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.items button {
+    background-color: #ffffff;
+    color: rgb(118,46,63); /* Soft muted maroon */
+    border: 2px solid #ffe0f0;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 183, 197, 0.1);
+}
+
+/* Hover State */
+.items button:hover {
+    background-color: #ffb7c5; /* Cozy Pink */
+    color: white;
+    border-color: #ffb7c5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 183, 197, 0.3);
+}
+
+/* Active/Selected State (Optional: add this class via JS) */
+.items button.active {
+    background-color: #ffb7c5;
+    color: white;
+    border-color: #ffb7c5;
+}
+
+/* Ensuring the section title looks good */
+.section-two h1 {
+    text-align: center;
+    color: rgb(112,74,76);
+    margin-bottom: 20px;
+}
