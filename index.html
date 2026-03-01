@@ -115,6 +115,11 @@
      </div>
     </section>
 
+	<div id="cart-float" class="cart-btn-float">
+    <span class="cart-icon">🛒</span>
+    <span id="cart-count">0</span>
+    </div>
+
 	<footer>
 		<center>
 			<p>COZY CRUMBS-Bakery & Cafe</p>
@@ -125,5 +130,23 @@
 		</center>
 	</footer>
 	<script src="script.js"></script>
+
+	<div id="cart-modal" class="modal-overlay" style="display: none;">
+    <div class="cart-content">
+        <div class="cart-header">
+            <h2>Your cart 🌸</h2>
+            <button onclick="closeCart()" class="close-cart">✕</button>
+        </div>
+        <div id="cart-items-list">
+            </div>
+        <div class="cart-footer">
+            <div class="total-section">
+                <span>Total:</span>
+                <span id="cart-total-amount">₹0</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
