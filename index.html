@@ -17,12 +17,12 @@
 				<h1>COZY CRUMBS</h1>
 			</div>
 			<ul>
-				<li><a href=" #hero">Home</a></li>
+				<li><a href="#hero">Home</a></li>
 				<li><a href="#menu">Menu</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section class="section-one" name="Home">
+	<section class="section-one" id="hero">
 		<div class="container">
 			<div class="content">
 				<h1>COZY CRUMBS</h1>
@@ -38,9 +38,9 @@
 					</p>
 
 					<p> <b>Explore More:</b></p>
-					<button>Star Bites</button>
-					<button>Trending Flavours</button>
-					<button>Cozy Combos</button>
+					<button class="button">Star Bites</button>
+					<button class="button">Trending Flavours</button>
+					<button class="button">Cozy Combos</button>
 				</div>
 			</div>
 			<img src="static/images/image.png" alt="">
@@ -80,6 +80,32 @@
 			</div>
 		</div>
 	</section>
+
+    <section class="section-five" id="reserve">
+     <div id="reservation-container">
+        <h1>Book a Cozy Table</h1>
+        <p>Join us for a sweet escape. Reserve your spot below!</p>
+        
+        <form id="reservation-form">
+            <div class="form-row">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="number" id="guests" placeholder="Number of Guests" min="1" max="10" required>
+            </div>
+            <div class="form-row">
+                <input type="date" id="res-date" required>
+                <input type="time" id="res-time" required>
+            </div>
+            <textarea id="notes" placeholder="Any special requests? (e.g., Birthday, Window seat)"></textarea>
+            <button type="submit" class="reserve-btn">Reserve Now</button>
+        </form>
+     </div>
+    </section>
+
+	<div id="cart-float" class="cart-btn-float">
+    <span class="cart-icon">🛒</span>
+    <span id="cart-count">0</span>
+    </div>
+
 	<footer>
 		<center>
 			<p>COZY CRUMBS-Bakery & Cafe</p>
@@ -89,6 +115,24 @@
 			</div>
 		</center>
 	</footer>
-</body>
+	<script src="script.js"></script>
 
+	<div id="cart-modal" class="modal-overlay" style="display: none;">
+    <div class="cart-content">
+        <div class="cart-header">
+            <h2>Your cart 🌸</h2>
+            <button onclick="closeCart()" class="close-cart">✕</button>
+        </div>
+        <div id="cart-items-list">
+            </div>
+        <div class="cart-footer">
+            <div class="total-section">
+                <span>Total:</span>
+                <span id="cart-total-amount">₹0</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+</body>
 </html>
