@@ -94,6 +94,27 @@
 			</div>
 		</div>
 	</section>
+
+    <section class="section-five" id="reserve">
+     <div id="reservation-container">
+        <h1>Book a Cozy Table</h1>
+        <p>Join us for a sweet escape. Reserve your spot below!</p>
+        
+        <form id="reservation-form">
+            <div class="form-row">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="number" id="guests" placeholder="Number of Guests" min="1" max="10" required>
+            </div>
+            <div class="form-row">
+                <input type="date" id="res-date" required>
+                <input type="time" id="res-time" required>
+            </div>
+            <textarea id="notes" placeholder="Any special requests? (e.g., Birthday, Window seat)"></textarea>
+            <button type="submit" class="reserve-btn">Reserve Now</button>
+        </form>
+     </div>
+    </section>
+
 	<footer>
 		<center>
 			<p>COZY CRUMBS-Bakery & Cafe</p>
@@ -103,5 +124,6 @@
 			</div>
 		</center>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>

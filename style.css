@@ -342,3 +342,62 @@ footer {
         padding: 20px;
     }
 }
+/* Table Reservation Styles */
+.section-five {
+    padding: 60px 20px;
+    background-color: #fff5f7; /* Matching your theme's light pink/cream */
+    text-align: center;
+}
+
+#reservation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#reservation-form input, 
+#reservation-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ffe0f0;
+    border-radius: 15px;
+    outline: none;
+    font-family: inherit;
+}
+
+#reservation-form textarea {
+    height: 100px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.reserve-btn {
+    background-color: #ffb7c5; /* Cozy Pink */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.reserve-btn:hover {
+    background-color: #ff9aa2;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
